@@ -9,12 +9,12 @@ To assemble and run the code, follow these steps:
 2. Linking: ld -m elf_i386 filename filename.o
 3. Running: ./filename
 
-;Sample Code : 
-section .data
-    msg db 'Hello, world!', 0
-section .text
+Sample Code : 
+    section .data
+        msg db 'Hello, world!', 0
+    section .text
     global _start
-_start:
+    _start:
 
     ; Output message
     mov eax, 4       ; sys_write
