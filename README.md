@@ -6,7 +6,7 @@ Usage
 To assemble and run the code, follow these steps:
 
 1. Assembling: Use an assembler compatible with i386 assembly. For example: "nasm -f elf filename.asm"
-2. Linking: ld -m elf_i386 filename filename.o
+2. Linking: ld -m elf_i386 -s -o filename filename.o
 3. Running: ./filename
 
 Sample Code : 
